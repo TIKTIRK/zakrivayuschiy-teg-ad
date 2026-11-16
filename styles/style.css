@@ -56,7 +56,8 @@
 
 .cards__list {
 	display: grid;
-	gap: 91px;
+	gap: 45px;
+	padding-bottom: 50px;
 }
 
 .card {
@@ -114,7 +115,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-  padding: 25px;
+	padding: 25px;
 	border-top: 2px solid var(--basic-color);
 }
 
@@ -131,7 +132,7 @@
 }
 
 .card__icon-button {
-  height: 38px;
+	height: 38px;
 	border: 2px solid transparent;
 	background-color: inherit;
 	cursor: pointer;
@@ -150,8 +151,54 @@
 }
 
 .button {
+	position: relative;
 	border: 2px solid var(--basic-color);
 	font-family: var(--additional-font);
 	background-color: var(--additional-color);
 	cursor: pointer;
+}
+
+.button__popup {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 15px 20px;
+	font-size: 14px;
+	line-height: 90%;
+}
+.filter__grayscale {
+	filter: grayscale(80%);
+}
+
+.filter__brightness {
+	filter: brightness(150%);
+}
+
+.filter__hue-rotate {
+	filter: hue-rotate(100deg);
+}
+
+.filter__sepia {
+	filter: sepia(1);
+}
+
+.filter__blur {
+	filter: blur(20px);
+}
+
+.filter__contrast {
+	filter: contrast(50%);
+}
+
+.filter__mix {
+	filter: saturate(250%) grayscale(30%) invert(80%);
+}
+
+.floppy {
+	flex-shrink: 0;
+}
+
+.icon-floppy {
+	color: var(--additional-color);
+	mix-blend-mode: difference;
 }
