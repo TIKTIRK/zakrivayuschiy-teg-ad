@@ -17,6 +17,7 @@
 	font-variation-settings: 400;
 	background-image: var(--background-gradient);
 	background-size: cover;
+	font-variation-settings: var(--font-bold);
 }
 
 .header {
@@ -202,3 +203,47 @@
 	color: var(--additional-color);
 	mix-blend-mode: difference;
 }
+
+.popup::backdrop {
+  opacity: 0.75;
+  background-color: var(--basic-color);
+}
+
+.popup[open] {
+  display: flex;
+}
+
+.popup {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 25px;
+  width: clamp(341px, 338px + 1.071vi, 353px);
+}
+
+.popup__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text__popup {
+  font-family: var(--additional-font);
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.button__popup-close {
+  padding: 9px 17px;
+  text-transform: uppercase;
+}
+
+@media (width <= 375px) {
+  .header-mobile {
+    width: 100%;
+  }
+
+  .card__item {
+    width: 100%;
+  }
+} 

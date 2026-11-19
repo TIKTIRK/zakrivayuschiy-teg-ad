@@ -98,7 +98,7 @@
 						</div>
 						<div class="card__text-container">
 							<p class="card__text">
-								ННа первых этапах мы работали со страхами и сомнениями, которые
+								На первых этапах мы работали со страхами и сомнениями, которые
 								часто испытывают новички. Один из них — страх перед чистым
 								листом. Это, конечно же, намного сложнее, чем боязнь куска
 								бумаги. Часто за этим ощущением скрываются более глубокие
@@ -540,6 +540,29 @@
 				</svg>
 				<span class="button__text">Сохранить на память</span>
 			</button>
+			<dialog id="popup-id" class="popup">
+				<div class="popup__container">
+					<svg
+						class="floppy"
+						width="40"
+						height="40"
+						viewBox="0 0 40 40"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<use href="svg/floppy.svg#floppy"></use>
+					</svg>
+					<p class="text__popup">Вставьте дискету, чтобы продолжить</p>
+				</div>
+				<button
+					class="button__popup-close button"
+					type="button"
+					onclick="window['popup-id'].close()"
+					aria-controls="popup-id"
+				>
+					<span class="button__text">ок</span>
+				</button>
+			</dialog>
 		</main>
 		<script src="./scripts/like.js"></script>
 	</body>
