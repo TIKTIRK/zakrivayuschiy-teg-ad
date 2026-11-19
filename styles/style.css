@@ -14,10 +14,9 @@
 	min-inline-size: 320px;
 	min-block-size: 100dvb;
 	font-family: var(--basic-font), 'Times New Roman';
-	font-variation-settings: 400;
 	background-image: var(--background-gradient);
 	background-size: cover;
-	font-variation-settings: var(--font-bold);
+	font-variation-settings: "wght" var(--font-weight);
 }
 
 .header {
