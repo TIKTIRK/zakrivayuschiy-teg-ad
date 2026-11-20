@@ -22,5 +22,9 @@
 	--basic-color: #000000;
 	--additional-color: #ffffff;
 	--shadow-color: #ffffff;
-	--font-weight: 400;
+	--font-weight: 700;
+	--font-regular: 400;
+	--heart-body:#FF0000;
+  	--heart-core:white;
+  	--heart-sparks: #FF0000;
 }
