@@ -523,12 +523,7 @@
 					</article>
 				</li>
 			</ul>
-			<button
-				class="button__popup button"
-				type="button"
-				onclick="window['popup-id'].showModal()"
-				aria-controls="popup-id"
-			>
+			<button class="button__popup button" type="button" id="open-popup">
 				<svg
 					width="21"
 					height="21"
@@ -557,8 +552,7 @@
 				<button
 					class="button__popup-close button"
 					type="button"
-					onclick="window['popup-id'].close()"
-					aria-controls="popup-id"
+					id="close-popup"
 				>
 					<span class="button__text">ОК</span>
 				</button>
